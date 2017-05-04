@@ -35,7 +35,7 @@ Object.keys(proxyTable).forEach(function (context) {
         proxyArr.push(proxyMiddleware(context, options));
 });
 
-gulp.task('browser-sync', ['sass', 'script', 'copy-resources', 'copy-html'], function () {
+gulp.task('browser-sync', ['sass', 'script', 'copy-resources', 'copy-html', 'copy-intro'], function () {
         browserSync.init({
                 server: {
                         middleware: proxyArr
@@ -46,7 +46,8 @@ gulp.task('browser-sync', ['sass', 'script', 'copy-resources', 'copy-html'], fun
         gulp.watch("css/**/*.scss", ['sass']);
         gulp.watch("js/**/*.js", ['script']);
         gulp.watch("resources/**/*", ['copy-resources']);
-    gulp.watch("index.html", ['copy-html']);
+        gulp.watch("index.html", ['copy-html']);
+        gulp.watch("intro/*.html", ['copy-intro']);
 });
 
 
@@ -60,6 +61,13 @@ gulp.task('copy-html', function () {
     return gulp.src('index.html')
         // .pipe(assetRev())
         .pipe(gulp.dest('dist'))
+        .pipe(browserSync.stream());;
+})
+
+gulp.task('copy-intro', function () {
+    return gulp.src('intro/*.html')
+        // .pipe(assetRev())
+        .pipe(gulp.dest('dist/intro/'))
         .pipe(browserSync.stream());;
 })
 //编译sass

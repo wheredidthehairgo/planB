@@ -1,3 +1,9 @@
+@import "./page/index";
+
+body {
+    margin-top: 68px;
+}
+
 .navbar-default {
     background-color: #fff;
 }
@@ -14,6 +20,21 @@
     width: 300px;
 }
 
+.nav {
+    >li {
+        >a {
+            &:hover {
+                color: #fff;
+                background-color: #1F599D;
+                padding-top: 22px;
+                border-top-width: 3px;
+                border-top-style: solid;
+                border-top-color: #1F399D;
+            }
+        }
+    }
+}
+
 .nav-pills {
     li {
         a { 
@@ -25,7 +46,7 @@
             border-radius: 0;
             color: #666;
         }
-        a:hover, a:click, .active {
+        .active {
             color: #fff;
             background-color: #1F599D;
             padding-top: 22px;
@@ -38,6 +59,22 @@
 
 @media (max-width: 720px) {
     .logo-img {
-    width: 220px;
+        width: 220px;
+    }
 }
+
+.foot {
+    width: 100%;
+    text-align: center;
+    background-color: #666;
+    padding-top: 8px;
+    p {
+        color: #fff;
+        line-height: 2;
+    }
+}
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
 }

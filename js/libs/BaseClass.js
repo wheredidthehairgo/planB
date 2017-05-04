@@ -3,5 +3,7 @@ class BaseClass {
         this.$dom = $(str);
         this.init();
     }
-     init(){}
+    init(){}
 }
+
+module.exports = BaseClass;

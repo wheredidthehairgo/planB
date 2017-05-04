@@ -1,72 +1,150 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<link rel="shortcut icon" href="resources/img/favicon.ico"/>
-		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-		<title>数字内容处理及安全性应用实验室</title>
-        <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-        <link href="https://cdn.bootcss.com/normalize/6.0.0/normalize.min.css" rel="stylesheet">
-        <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/main.css">
-	</head>
-	<body>
-        <header>
-            <div class="navbar navbar-default navbar-fixed-top navbar-box">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a href="" class="navbar-brand"><img src="resources/img/logo.gif" alt="" class="brand-img logo-img"></a>
-                    </div>
-                    <div id="navbar" class="navbar-collapse collapse">
-                        <ul class="nav nav-pills pull-right">
-                            <li>
-                                <a class="active" href="/" data-hover="dropdown">网站首页</a>
-                            </li>
 
-                            <li>
-                                <a href="http://z-innoway.com/index.php?app=web&amp;m=Article&amp;a=detail&amp;id=16" data-toggle="dropdown" data-hover="dropdown">实验室概况</a>                           
-                            </li>
+<head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="resources/img/favicon.ico" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>数字内容处理及安全性应用实验室</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://cdn.bootcss.com/normalize/6.0.0/normalize.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
 
-                            <li>
-                                <a href="http://z-innoway.com/index.php?app=web&amp;m=Article&amp;a=lists&amp;id=11" data-hover="dropdown" data-toggle="dropdown">科学研究</a>                        
-                            </li>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top navbar-box">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                <a href="" class="navbar-brand"><img src="resources/img/logo.gif" alt="" class="brand-img logo-img"></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav nav-pills pull-right">
+                    <li>
+                        <a class="active" href="" data-hover="dropdown">网站首页</a>
+                    </li>
 
-                            <li>
-                                <a data-hover="dropdown" href="http://z-innoway.com/index.php?app=web&amp;m=Article&amp;a=lists&amp;id=2">队伍建设</a>
-                            </li>
+                    <li>
+                        <a href="intro/intro1.html" data-hover="dropdown">实验室概况</a>
+                    </li>
 
-                            <li>
-                                <a href="http://z-innoway.com/index.php?app=web&amp;m=Article&amp;a=lists&amp;id=3" data-hover="dropdown" data-toggle="dropdown">开放交流</a> 
-                            </li>
+                    <li>
+                        <a href="" data-hover="dropdown">科学研究</a>
+                    </li>
 
-                            <li>
-                                <a href="http://z-innoway.com/index.php?app=web&amp;m=Activity&amp;a=index" data-hover="dropdown">运行管理</a>
-                            </li>
+                    <li>
+                        <a href="" data-hover="dropdown">队伍建设</a>
+                    </li>
 
-                        
-                            <li>
-                                <a href="http://z-innoway.com/index.php?app=web&amp;m=Article&amp;a=lists&amp;id=36" data-hover="dropdown" data-toggle="dropdown">人才培养</a>
-                            </li>
+                    <li>
+                        <a href="" data-hover="dropdown">开放交流</a>
+                    </li>
 
-                            <li>
-                                <a href="http://www.innoway.jobs/" target="_blank" data-hover="dropdown">街区招聘</a>
-                            </li>
+                    <li>
+                        <a href="" data-hover="dropdown">运行管理</a>
+                    </li>
 
-                            <li>
-                                <a href="http://z-innoway.com/index.php?app=web&amp;m=Apply&amp;a=index" data-hover="dropdown" data-toggle="dropdown">服务</a>                              
-                            </li>
-                        </ul>
+
+                    <li>
+                        <a href="" data-hover="dropdown">人才培养</a>
+                    </li>
+
+                    <li>
+                        <a href="" data-hover="dropdown">街区招聘</a>
+                    </li>
+
+                    <li>
+                        <a href="" data-hover="dropdown">服务</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container about">
+        <h2>关于我们</h2>
+        <div class="row">
+            <div id="owl_container" class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+                <div id="carousel-example-generic-news" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <a target="_blank" title="聘请University of Strathclyde 任金昌博士为重点实验室客座教徒">
+                                <div style="background: url(resources/img/banner1.jpg) center center / cover no-repeat; height: 280px;"></div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a target="_blank" title="实验室人员技术交流会现场">
+                                <div style="background: url(resources/img/banner2.jpg) center center / cover no-repeat; height: 280px;"></div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a target="_blank" title="校领导和荣教授参观">
+                                <div style="background: url(resources/img/banner4.jpg) center center / cover no-repeat; height: 280px;"></div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a target="_blank" title="团队合影">
+                                <div style="background: url(resources/img/banner3.jpg) center center / cover no-repeat; height: 280px;"></div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </header>
-        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>
-	</body>
+
+            <div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+                <div class="right_list_title">
+                    <h4 id="news_title" class="media-heading grey22b">聘请University of Strathclyde 任金昌博士为重点实验室客座教徒"</h4>       
+                </div>
+                <div class="right_list about-intro">
+                        广东技术师范学院数字内容处理及安全性应用实验室是广州市第一个数据层处理与内容保护的基础研究与基础应用重点实验室。应国务院提出互联网+指导意见， 广东省“十二五”规划对新一代信息产业发展方向和新兴业态的扶持政策，本实验室致力于通过分布式压缩感知和深度学习，建立广州市高校之间、高校与企业之间数据共享与智慧管理的交互平台，和利用身份认证和属性加密技术，创造广州市互联网+和云计算环境下的新的数字内容保护形态。
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container news">
+        <h2>最新消息</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-heading">科学研究<a href="" class="more_link">more+</a></div>             
+                    <div class="list-group">
+                        <a href="#" class="list-group-item"><span>天和百货的链接被封了，先按上次华润的来处理吧</span><span class="badge">科研论文</span></a>
+                        <a href="#" class="list-group-item"><span>天和百货的链接被封了，先按上次华润的来处理吧</span><span class="badge">科研论文</span></a>
+                        <a href="#" class="list-group-item"><span>天和百货的链接被封了，先按上次华润的来处理吧</span><span class="badge">科研论文</span></a>
+                        <a href="#" class="list-group-item"><span>天和百货的链接被封了，先按上次华润的来处理吧</span><span class="badge">科研论文</span></a>
+                        <a href="#" class="list-group-item"><span>天和百货的链接被封了，先按上次华润的来处理吧</span><span class="badge">科研论文</span></a>
+                    </div>                    
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel">
+                    <div class="panel-heading">开放交流<a href="" class="more_link">more+</a></div>            
+                    <div class="list-group">
+                        <a href="#" class="list-group-item"><span>天和百货的链接被封了，先按上次华润的来处理吧</span><span class="badge">科研论文</span></a>
+                        <a href="#" class="list-group-item"><span>天和百货的链接被封了，先按上次华润的来处理吧</span></a>
+                        <a href="#" class="list-group-item"><span>天和百货的链接被封了，先按上次华润的来处理吧</span></a>
+                        <a href="#" class="list-group-item"><span>天和百货的链接被封了，先按上次华润的来处理吧</span></a>
+                        <a href="#" class="list-group-item"><span>天和百货的链接被封了，先按上次华润的来处理吧</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="container">
+            <p>通讯地址：广州市中山大道西293号 邮政编码：510665</p>
+            <p>电话：020-38257155 传真：020-38257901</p>
+        </div>     
+    </div>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
 </html>

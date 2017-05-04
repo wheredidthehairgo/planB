@@ -1,0 +1,50 @@
+.container {
+    h2 {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+}
+
+.about {
+    .right_list_title {
+        margin-top: 10px;
+        width: 100%;
+        overflow: hidden;
+        .grey22b {
+            color: #333;
+            font-size: 22px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    }
+
+    .about-intro {
+        text-indent: 2em;
+        margin: 10px;
+        line-height: 1.5;
+    }
+}
+
+
+.news {
+    .panel-heading {
+        color: #1F599D;
+        font-weight: bold;
+        border-bottom: 2px #1F599D solid;
+        .more_link {
+            float: right;
+            color: #333;
+            font-weight: normal;
+        }
+    }
+    .list-group {
+        a {
+            // span:first-child {
+            //     display: inline-block;
+            //     width: 75%;
+            //     white-space: nowrap;
+            //     overflow: hidden;
+            // }
+        }
+    }
+}
