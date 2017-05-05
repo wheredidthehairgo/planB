@@ -35,7 +35,7 @@ Object.keys(proxyTable).forEach(function (context) {
         proxyArr.push(proxyMiddleware(context, options));
 });
 
-gulp.task('browser-sync', ['sass', 'script', 'copy-resources', 'copy-html', 'copy-intro'], function () {
+gulp.task('browser-sync', ['sass', 'script', 'copy-resources', 'copy-html', 'copy-intro', 'copy-tmsc', 'copy-pogu', 'copy-pstr', 'copy-service', 'copy-scrs', 'copy-opco', 'copy-sec'], function () {
         browserSync.init({
                 server: {
                         middleware: proxyArr
@@ -48,6 +48,13 @@ gulp.task('browser-sync', ['sass', 'script', 'copy-resources', 'copy-html', 'cop
         gulp.watch("resources/**/*", ['copy-resources']);
         gulp.watch("index.html", ['copy-html']);
         gulp.watch("intro/*.html", ['copy-intro']);
+        gulp.watch("tmsc/*.html", ['copy-tmsc']);
+        gulp.watch("pogu/*.html", ['copy-pogu']);
+        gulp.watch("pstr/*.html", ['copy-pstr']);
+        gulp.watch("service/*.html", ['copy-service']);
+        gulp.watch("scrs/*.html", ['copy-scrs']);
+        gulp.watch("opco/*.html", ['copy-opco']);
+        gulp.watch("sec/*.html", ['copy-sec']);
 });
 
 
@@ -68,6 +75,55 @@ gulp.task('copy-intro', function () {
     return gulp.src('intro/*.html')
         // .pipe(assetRev())
         .pipe(gulp.dest('dist/intro/'))
+        .pipe(browserSync.stream());;
+})
+
+gulp.task('copy-tmsc', function () {
+    return gulp.src('tmsc/*.html')
+        // .pipe(assetRev())
+        .pipe(gulp.dest('dist/tmsc/'))
+        .pipe(browserSync.stream());;
+})
+
+gulp.task('copy-pogu', function () {
+    return gulp.src('pogu/*.html')
+        // .pipe(assetRev())
+        .pipe(gulp.dest('dist/pogu/'))
+        .pipe(browserSync.stream());;
+})
+
+gulp.task('copy-pstr', function () {
+    return gulp.src('pstr/*.html')
+        // .pipe(assetRev())
+        .pipe(gulp.dest('dist/pstr/'))
+        .pipe(browserSync.stream());;
+})
+
+gulp.task('copy-service', function () {
+    return gulp.src('service/*.html')
+        // .pipe(assetRev())
+        .pipe(gulp.dest('dist/service/'))
+        .pipe(browserSync.stream());;
+})
+
+gulp.task('copy-scrs', function () {
+    return gulp.src('scrs/*.html')
+        // .pipe(assetRev())
+        .pipe(gulp.dest('dist/scrs/'))
+        .pipe(browserSync.stream());;
+})
+
+gulp.task('copy-opco', function () {
+    return gulp.src('opco/*.html')
+        // .pipe(assetRev())
+        .pipe(gulp.dest('dist/opco/'))
+        .pipe(browserSync.stream());;
+})
+
+gulp.task('copy-sec', function () {
+    return gulp.src('sec/*.html')
+        // .pipe(assetRev())
+        .pipe(gulp.dest('dist/sec/'))
         .pipe(browserSync.stream());;
 })
 //编译sass

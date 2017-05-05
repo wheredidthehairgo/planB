@@ -40,8 +40,19 @@
             border-bottom: 1px solid #e9e9e9;
         }
         .list-box {
-            padding: 20px;
+            padding: 10px;
             border-bottom: 1px solid #e9e9e9;
+            .text-overflow {
+                padding-left: 10px;
+                display: block;
+                word-break: keep-all;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .list-date {
+                float: right;
+            }
         }
         .section-title {
             margin: 0 20px;
@@ -49,8 +60,7 @@
             .content_c_title {
                 line-height: 36px;
                 color: #0066cc;
-                font-family: "Microsoft Yahei";
-                font-size: 24px;
+                font-family: "Microsoft Yahei";;
                 text-align: center;
             }
         }
@@ -59,21 +69,55 @@
             .grey14 {
                 color: #666;
                 font-size: 14px;
+                span {
+                    margin: 0 1% 0 2%; 
+                }
             }
         }
         .section-body {
-            margin: 20px;
+            margin: 10px;
             overflow: hidden;
+            
             p {
                 text-indent: 2em;
+            }
+            .section-table {
+                th {
+                    background-color: #4688cf;
+                    color: #fff;
+                }
             }
         }
     }
 }
 
+.pic1-img {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+    margin-bottom: 14px;
+}
+
+.pic2-img {
+    width: 100px;
+    height: auto;
+    float: left;
+    margin: 0 14px;
+}
+
+.pic3-img {
+    margin: 2% 2%;
+    width: 96%;
+    height: 200px;
+}
+
 @media (max-width: 720px) {
     .content-body {
         padding-top: 15px;
+    }
+    .pic1-img {
+        width: 100%;
     }
 }
 
