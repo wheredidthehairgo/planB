@@ -39,12 +39,14 @@
     }
     .list-group {
         a {
-            // span:first-child {
-            //     display: inline-block;
-            //     width: 75%;
-            //     white-space: nowrap;
-            //     overflow: hidden;
-            // }
+            span:first-child {
+                display: inline-block;
+                width: 75%;
+                word-break: keep-all;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
         }
     }
 }
